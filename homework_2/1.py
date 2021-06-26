@@ -4,3 +4,6 @@ toshiba = ["Gilbert Ramsey", "Robert Lane", "John Doyle",
 toshiba.extend(global_logic)
 print(toshiba)
 
+# Good. But global logic employees are employees of toshiba.
+# But if I will try to print global_logic I will see that some employees still
+# present there.
