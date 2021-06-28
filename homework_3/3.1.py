@@ -3,7 +3,7 @@ list_1 = [1, 2, 3, 4, 5, 6, 7, 8]  # I suppose will be better to name it like nu
 chet = []  # I suppose will be better to name it like even
 nechet = []  # I suppose will be better to name if like odd
 
-for index in range(len(list_1)):
+for index in range(len(list_1)):  # you should use foreach loop instead of for loop
     if index % 2 == 0:
         chet.append(index)
     else:
