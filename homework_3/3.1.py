@@ -1,15 +1,15 @@
-list_1 = [1, 2, 3, 4, 5, 6, 7, 8]  # I suppose will be better to name it like numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]  # I suppose will be better to name it like numbers
 
-chet = []  # I suppose will be better to name it like even
-nechet = []  # I suppose will be better to name if like odd
+even = []  # I suppose will be better to name it like even
+odd= []  # I suppose will be better to name if like odd
 
-for index in range(len(list_1)):  # you should use foreach loop instead of for loop
+for index, item in enumerate(numbers):  # you should use foreach loop instead of for loop
     if index % 2 == 0:
-        chet.append(index)
+        even.append([index,item])
     else:
-        nechet.append(index)
-print(chet)
-print(nechet)
+        odd.append([index,item])
+print([tuple(i) for i in even])
+print([tuple(y) for y in odd])
 
 # I sugest to look on list method index of build in function enumerate
 # Try something like this:
