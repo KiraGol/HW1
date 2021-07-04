@@ -11,3 +11,4 @@ print(unique)
 # Good. But it can be solved in one line in python with dicts.
 # Since dict contains only unique keys.
 # print(list({}.fromkeys(gruppa).keys()))
+
