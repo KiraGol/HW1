@@ -6,4 +6,6 @@ print(string3)
 pairs = string3.split('&')
 print(pairs)
 
-
+# Well good but pair is list but should be dict so you should split each string by '=' one more time and take a look on maxsplit argument
+# Also I notice that you have use rstrip, lstrip - you can use strip only)
+# -2 points

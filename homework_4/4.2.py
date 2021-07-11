@@ -8,3 +8,4 @@ friends2 = f"John\nMarta\nJames\nAmanda\nMarianna"
 for f in friends:
     print("{:>50}".format(f))
 
+# Nice job.
