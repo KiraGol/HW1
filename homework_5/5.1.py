@@ -11,22 +11,21 @@ print(os.getcwd())
 os.chdir('C:\\Users\\denys\\PycharmProjects\\homework1\\homework_5\\test\\data')
 print(os.getcwd())
 
+
 my_file = open("text.txt", "w")
 my_file.close()
 
 with open ("text.txt", "wb") as file:
     text = pickle.dumps(b)
     file.write(text)
+# well since I am using Ubuntu it will not work on my end.
+# So you have to rewrite it with relative path.
+# Good but it make not sence to open file for writting and close
+# it in next line)
 
-with open ("text.txt", "rb") as file:
-    byte_text = file.read()
-    b_2 = pickle.loads(byte_text)
-print(b_2)
-
-for (a,d,c) in b_2:
-    if c == 1:
-        print(a+d)
-    elif c == 2:
-        print(a-d)
-    else:
-        print(a*d)
+# Resolve this issues in this module
+# 5.1.py:4:23: E231 missing whitespace after ','
+# 5.1.py:4:46: E231 missing whitespace after ','
+# 5.1.py:4:69: E231 missing whitespace after ','
+# 5.1.py:11:80: E501 line too long (80 > 79 characters)
+# 5.1.py:18:10: E211 whitespace before '('
