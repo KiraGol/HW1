@@ -1,11 +1,11 @@
 import pickle
 
-with open ("text.txt", "rb") as file:
+with open("text.txt", "rb") as file:
     byte_text = file.read()
     b_2 = pickle.loads(byte_text)
 print(b_2)
 
-for (a,d,c) in b_2:
+for (a, d, c) in b_2:
     if c == 1:
         print(a+d)
     elif c == 2:
