@@ -1,21 +1,21 @@
 import os
 import pickle
 import random
-b = [(random.randint(1,100), random.randint(1,100), random.randint(1,3))
+b = [(random.randint(1, 100), random.randint(1, 100), random.randint(1, 3))
      for i in range(100)]
 print(b)
 
 os.makedirs("test/data")
 
 print(os.getcwd())
-os.chdir('C:\\Users\\denys\\PycharmProjects\\homework1\\homework_5\\test\\data')
+os.chdir("test/data")
 print(os.getcwd())
 
 
 my_file = open("text.txt", "w")
 my_file.close()
 
-with open ("text.txt", "wb") as file:
+with open("text.txt", "wb") as file:
     text = pickle.dumps(b)
     file.write(text)
 # well since I am using Ubuntu it will not work on my end.
