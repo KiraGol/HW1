@@ -5,14 +5,14 @@ b = [(random.randint(1, 100), random.randint(1, 100), random.randint(1, 3))
      for i in range(100)]
 print(b)
 
-os.makedirs("test/data")
+#os.makedirs("test/data")
 
 print(os.getcwd())
 os.chdir("test/data")
 print(os.getcwd())
 
 
-my_file = open("text.txt", "w")
+my_file = open("text.txt", "r")
 my_file.close()
 
 with open("text.txt", "wb") as file:
