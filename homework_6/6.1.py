@@ -1,6 +1,7 @@
 def arithmetic(left_operand: int, right_operand: int, operation: str):
-    """returns the result of the sum, subtraction, multiplication, division
-    of the entered data """
+    """
+        Apply arithmetic operation for provided left and right operands
+    """
     if operation == "+":
         return left_operand + right_operand
     elif operation == "-":
