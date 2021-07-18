@@ -1,7 +1,4 @@
-from typing import Tuple, Union
-
-
-def square(side_of_square: int) -> Tuple[int, int, Union[int, float]]:
+def square(side_of_square: int):
     p = 4 * side_of_square
     s = side_of_square ** 2
     d = side_of_square * (2 ** 0.5)
