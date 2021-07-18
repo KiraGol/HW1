@@ -1,4 +1,6 @@
 def square_of_an_even_number():
+    """returns the squares of even elements for the range 0
+    through 1,000,000,000, inclusive"""
     number = 0
     while number <= 1000000000:
         if number % 2 == 0:
