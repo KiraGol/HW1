@@ -1,4 +1,4 @@
-def square(side_of_square):
+def square(side_of_square: int):
     p = 4 * side_of_square
     s = side_of_square ** 2
     d = side_of_square * (2 ** 0.5)
