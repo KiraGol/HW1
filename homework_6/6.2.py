@@ -1,3 +1,6 @@
+from typing import Tuple, Union
+
+
 def square(side_of_square: int):
     p = 4 * side_of_square
     s = side_of_square ** 2
@@ -7,3 +10,5 @@ def square(side_of_square: int):
 
 
 print(square(4))
+# Good but I suggest to add annotation for return value too
+# def square(side_of_square: int) -> Tuple[int, int, Union[int, float]]:
