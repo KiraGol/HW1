@@ -1,0 +1,5 @@
+I suggest to do 1 task in next way:
+1. create package for module/s - operations
+2. create in root of homework taks_1.py module
+3. place math into the operation package
+4.
