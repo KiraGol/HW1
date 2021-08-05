@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
-from homework_11.IMoveable import IMoveable
-from homework_11.IDrivable import IDrivable
+from .IMoveable import IMoveable
+from .IDrivable import IDrivable
 
 
 class Car(IMoveable, IDrivable, ABC):

@@ -1,4 +1,4 @@
-from homework_11.Car import Car
+from .Car import Car
 
 
 class Toyota(Car):
@@ -22,3 +22,6 @@ class Toyota(Car):
         """returns the way to repair an automatic transmission"""
         print("Give it to a repair service "
               "that repairs manual transmissions")
+
+# Good but I want to see implementing of same method in Audi and Toyotan in different ways
+# -4 points
