@@ -23,5 +23,3 @@ class Toyota(Car):
         print("Give it to a repair service "
               "that repairs manual transmissions")
 
-# Good but I want to see implementing of same method in Audi and Toyotan in different ways
-# -4 points
