@@ -9,14 +9,14 @@ class CurrentAccount(ABC):
             currency: str,
             income: int,
             costs: int,
-            earnings: int = None
+            account_balance: int = None
     ):
         self.customer_name = customer_name
         self.account_number = account_number
         self.currency = currency
         self.income = income
         self.costs = costs
-        self.earnings = earnings
+        self.account_balance = account_balance
 
     @abstractmethod
     def account_currency(self):
@@ -24,10 +24,10 @@ class CurrentAccount(ABC):
         pass
 
     @property
-    def earnigs(self):
-        """returns the client's earnings"""
-        self.earnings: int = self.income - self.costs
-        return self.earnings
+    def account_balance(self):
+        """returns the client's account balance"""
+        self.account_balance: int = self.income - self.costs
+        return self.account_balance
 
 
 class HRNAcc(CurrentAccount):
@@ -38,10 +38,10 @@ class HRNAcc(CurrentAccount):
             currency: str,
             income: int,
             costs: int,
-            earnings: int = None
+            account_balance: int = None
     ):
         super().__init__(customer_name, account_number, currency, income,
-                         costs, earnings)
+                         costs, account_balance)
 
     @property
     def account_currency(self) -> str:
@@ -61,10 +61,10 @@ class USDAcc(CurrentAccount):
             currency: str,
             income: int,
             costs: int,
-            earnings: int = None
+            account_balance: int = None
     ):
         super().__init__(customer_name, account_number, currency, income,
-                         costs, earnings)
+                         costs, account_balance)
 
     @property
     def account_currency(self) -> str:
