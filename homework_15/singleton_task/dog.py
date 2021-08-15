@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from homework_15.singleton import singleton
+from homework_15.singleton_task.singleton import singleton
 
 
 @singleton
