@@ -1,5 +1,4 @@
 from homework_15.products import Apple, Banana, Celery, Strawberry
-from homework_15.products.Product import Product
 
 
 class Market:
