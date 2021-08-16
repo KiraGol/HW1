@@ -1,4 +1,4 @@
-from homework_15.products.Product import Product
+from .Product import Product
 
 
 class Celery(Product):

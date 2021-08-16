@@ -1,6 +1,4 @@
-from __future__ import annotations
-
-from homework_15.singleton_task.singleton import singleton
+from KiraMogilyuk.Hillel.homework_15.singleton_task.singleton import singleton
 
 
 @singleton
@@ -13,4 +11,6 @@ class Dog:
 if __name__ == '__main__':
     scooter_1 = Dog("Bobby", "husky")
     scooter_2 = Dog("Red", "some")
+    # dogs with names scooter 1 and 2 looks strange)
+    # next time will reduce points for copy paste
     print()

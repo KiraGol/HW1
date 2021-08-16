@@ -1,4 +1,4 @@
-from homework_15.products import Apple, Banana, Celery, Strawberry
+from KiraMogilyuk.Hillel.homework_15.products import Apple, Banana, Celery, Strawberry
 
 
 class Market:

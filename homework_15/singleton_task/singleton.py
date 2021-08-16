@@ -1,11 +1,15 @@
 from typing import Type
 
 
-def singleton(_class: Type):
+def singleton(_class):
     def inner(*args):
-        instance = None
-        if not hasattr(_class, instance.__class__.__name__):
-            setattr(_class, instance.__class__.__name__, _class(*args))
-        return getattr(_class, instance.__class__.__name__)
+        name = f"_{_class.__name__}__instance"
+
+        if not hasattr(_class, name):
+            setattr(_class, name, _class(*args))
+        return getattr(_class, name)
 
     return inner
+
+# Good but in your solution private attribute was not present but public with name NoneType was so -5 points
+# Take a look on proper solution
