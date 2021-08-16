@@ -15,4 +15,10 @@ class TrainCar:
         return f"[{self.__number}]"
 
 
+if __name__ == '__main__':
+    train_car = TrainCar(1)
+    train_car.add_passenger("John Dow")
+    # print(len(train_car))
+    # print(train_car)
+    # it is not works since you have made both bagic methods like property -2 points
 

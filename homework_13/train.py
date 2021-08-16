@@ -12,4 +12,13 @@ class Train:
 
     @property
     def __len__(self):
+        # you should not return with -1 because train it is something like locomotive already
         return len(self.__train_cars) - 1
+
+
+if __name__ == '__main__':
+    train = Train()
+    print(len(train))
+    # this will not works since you have made magic method like property
+    # always check and test your code
+    # -2 points
